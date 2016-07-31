@@ -9,7 +9,7 @@ Part I
 
 * Java 1.8 or higher
 * PostgreSQL 9.5 
-* 
+ 
 Note: For this quick demo purpose, i choose to use PostgreSQL rds. The Nosql (ex: DynamoDB) should be a better choose for this service in teams of scalability and durability
 
 #### Database setup 
@@ -53,9 +53,9 @@ Sample response:
 Step 2:copy shotUrl value from above response "http://shortening-url.us-west-2.elasticbeanstalk.com/shortener/Fr", and paste it to browser, you will be redirected to original long url "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse".
 
 ### Design
--The service creates new db record for each shortening url Post API call. And genered a unique short Url base on the corresponding db record ID.
--ID, long_url and short_url are all persisted into data base during Post call.
--The service is able to find db id from short_url, and then find corresponding long url.
+* The service creates new db record for each shortening url Post API call. And genered a unique short Url base on the corresponding db record ID.
+* ID, long_url and short_url are all persisted into data base during Post call.
+* The service is able to find db id from short_url, and then find corresponding long url.
 
 Part II
 ===============
