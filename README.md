@@ -38,13 +38,16 @@ Sample response:
 Step 2: copy shotUrl value from above response "http://localhost:9024/shortener/Cd", and paste it to browser, you will be redirect to original long url "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse".
 
 ### Api Testing against the service deployed in cloud
-In case of if the service can not be run in your local machine successfully, i also deploy the same code on to cloud. Following is how to test it:
+In case of if the service can not be run in your local machine successfully, i also deploy the same code on to cloud.
+Following is how to test it:
+
 Step 1: Run curl command.
--Sample curl command:
+
+Sample curl command:
 curl -H "Content-type: application/json" -X POST -d '{"url": "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse"}
 '  http://shortening-url.us-west-2.elasticbeanstalk.com/shortener
 
--Sample response:
+Sample response:
 {"shortUrl":"http://shortening-url.us-west-2.elasticbeanstalk.com/shortener/Fr"}
 
 Step 2:copy shotUrl value from above response "http://shortening-url.us-west-2.elasticbeanstalk.com/shortener/Fr", and paste it to browser, you will be redirect to original long url "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse".
