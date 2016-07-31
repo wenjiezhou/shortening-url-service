@@ -11,8 +11,6 @@ Part I
 * PostgreSQL 9.5 (you do not need to config database yourself)
 The Nosql (ex: DynamoDB) should be a better choose in teams of scalability and durability
 
-### Installation
-
 #### Database setup 
 
 You do not need to setup database. The well configured AWS RDS instance is up running here:rlshorter.cdr2w6zgugdk.us-east-1.rds.amazonaws.com:5432
