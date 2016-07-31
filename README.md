@@ -1,4 +1,4 @@
-shortening_url-service
+shortening-url-service
 ===============
 
 A lightweight microservice built on Spring using postgresql as a backing datastore meant to handle all url shortening relate APIs.
