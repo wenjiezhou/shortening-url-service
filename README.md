@@ -53,6 +53,8 @@ Potential problem and solution: with high traffic, the race condition result in 
 
 ### Following are References
 https://goo.gl/
+
 https://en.wikipedia.org/wiki/Bijection
+
 https://aws.amazon.com/dynamodb/faqs/
 
