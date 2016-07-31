@@ -13,7 +13,7 @@ The Nosql (ex: DynamoDB) should be a better choose in teams of scalability and d
 
 #### Database setup 
 
-You do not need to setup database. The well configured AWS RDS instance is up running here:rlshorter.cdr2w6zgugdk.us-east-1.rds.amazonaws.com:5432
+You do not need to setup database. The well configured AWS RDS instance is up running here:rlshorter.cdr2w6zgugdk.us-east-1.rds.amazonaws.com:5432.
 The application will connect to this RDS instance automatically.
 
 #### Starting Shortening Url Service Locally
