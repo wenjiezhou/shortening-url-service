@@ -24,15 +24,27 @@ Go to top level of the project, and run follwoing 3 commands in sequential order
 2. Run `./gradlew clean build` to build with Gradle.
 3. Run `./gradlew bootRun` to start the embedded Tomcat server
 
-### Api Testing
-#Step 1:You can run following curl command to Post shortening url api:
+### Api Testing Locally
+Step 1:You can run following curl command to Post shortening url api:
 -Sample Curl command:
 curl -H "Content-type: application/json" -X POST -d '{"url": "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse"}'  http://localhost:9024/shortener
 
 -Sample response:
 {"shortUrl":"http://localhost:9024/shortener/Cd"}
 
-#Step 2: copy shotUrl value from above response "http://localhost:9024/shortener/Cd", and paste it to browser, you will be redirect to original long url "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse".
+Step 2: copy shotUrl value from above response "http://localhost:9024/shortener/Cd", and paste it to browser, you will be redirect to original long url "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse".
+
+### Api Testing against the service deployed in cloud
+In case of if the service can not be run in your local machine successfully, i also deploy the same code on to cloud. Following is how to test it:
+Step 1: Run curl command.
+-Sample curl command:
+curl -H "Content-type: application/json" -X POST -d '{"url": "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse"}
+'  http://shortening-url.us-west-2.elasticbeanstalk.com/shortener
+
+-Sample response:
+{"shortUrl":"http://shortening-url.us-west-2.elasticbeanstalk.com/shortener/Fr"}
+
+Step 2:copy shotUrl value from above response "http://shortening-url.us-west-2.elasticbeanstalk.com/shortener/Fr", and paste it to browser, you will be redirect to original long url "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse".
 
 ### Design
 -The service creates new db record for each shortening url Post API call. And genered a unique short Url base on the corresponding db record ID.
