@@ -8,8 +8,8 @@ Part I
 ### Prereqs
 
 * Java 1.8 or higher
-* PostgreSQL 9.5 (you do not need to config database yourself)
-The Nosql (ex: DynamoDB) should be a better choose in teams of scalability and durability
+* PostgreSQL 9.5 
+Note: For this quick demo, i choose to use PostgreSQL rds. The Nosql (ex: DynamoDB) should be a better choose for this service in teams of scalability and durability
 
 #### Database setup 
 
