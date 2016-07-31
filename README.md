@@ -27,11 +27,12 @@ Go to top level of the project, and run follwoing 3 commands in sequential order
 3. Run `./gradlew bootRun` to start the embedded Tomcat server
 
 ### Api Testing Locally
-Step 1:You can run following curl command to Post shortening url api:
--Sample Curl command:
+Step 1:You can run following curl command to Post shortening url api.
+
+Sample Curl command:
 curl -H "Content-type: application/json" -X POST -d '{"url": "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse"}'  http://localhost:9024/shortener
 
--Sample response:
+Sample response:
 {"shortUrl":"http://localhost:9024/shortener/Cd"}
 
 Step 2: copy shotUrl value from above response "http://localhost:9024/shortener/Cd", and paste it to browser, you will be redirect to original long url "https://help.netflix.com/legal/termsofuse?locale=en&docType=termsofuse".
