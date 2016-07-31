@@ -18,8 +18,11 @@ The application will connect to this RDS instance automatically.
 
 #### Starting Shortening Url Service Locally
 Go to top level of the project, and run follwoing 3 commands in sequential order:
+
 1. Run `chmod +x gradlew` to avoid gradlew permission deny.
+ 
 2. Run `./gradlew clean build` to build with Gradle.
+ 
 3. Run `./gradlew bootRun` to start the embedded Tomcat server
 
 ### Api Testing Locally
